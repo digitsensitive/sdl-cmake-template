@@ -11,4 +11,10 @@ To generate the file you have to build it. Do it as follows:
 
 ## Submodules
 
-- SDL
+- [Simple DirectMedia Layer (SDL)](https://github.com/libsdl-org/SDL)
+
+### Update
+
+```bash
+git submodule update <specific path to submodule>
+```
