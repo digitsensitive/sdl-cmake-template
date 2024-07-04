@@ -1,4 +1,4 @@
-# SDL/C/CMake Template
+# A Basic SDL3/C/CMake-Template
 
 ## Windows
 
