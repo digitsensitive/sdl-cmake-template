@@ -1,18 +1,20 @@
 #include <stdio.h>
 
+// Include SDL3
 #include "SDL3/SDL.h"
 
 int main(int argc, char* argv[]) {
-  SDL_Init(SDL_INIT_VIDEO);
+  // Init SDL library
+  SDL_InitSubSystem(SDL_INIT_VIDEO);
 
   // Create an application window with the following settings:
-  SDL_Window* window = SDL_CreateWindow("An SDL2 window",  // window title
+  SDL_Window* window = SDL_CreateWindow("An SDL3 Window",  // window title
                                         640,               // width, in pixels
                                         480,               // height, in pixels
-                                        SDL_WINDOW_OPENGL  // flags - see below
+                                        SDL_WINDOW_OPENGL  // flags
   );
 
-  // Check that the window was successfully created
+  // Check if the window was successfully created
   if (window == NULL) {
     // In the case that the window could not be made...
     printf("Could not create window: %s\n", SDL_GetError());
@@ -21,8 +23,9 @@ int main(int argc, char* argv[]) {
 
   SDL_Delay(10000);
 
+  // Clean up
   SDL_DestroyWindow(window);
-
   SDL_Quit();
+
   return 0;
 }

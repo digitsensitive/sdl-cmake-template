@@ -1,13 +1,14 @@
-# SDL CMake Template
+# SDL/C/CMake Template
 
-Tested with Windows 11.
+## Windows
 
-You need to add the `SDL3.dll` file in the same folder as the executable.
-To generate the file you have to build it. Do it as follows:
+You need to generate the `SDL3.dll` file first.
+To generate it, follow these steps:
 
-1. Navigate to `cd vendors/src/build`
+1. Navigate to `cd vendors/sdl/build`
 2. Build `cmake ..`
 3. Build `make`
+4. Copy `SDL3.dll` from `vendors/sdl/build` into the folder with your executable
 
 ## Submodules
 
